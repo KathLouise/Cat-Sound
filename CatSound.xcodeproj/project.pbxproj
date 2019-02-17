@@ -14,6 +14,8 @@
 		CD1CDCE32219E26C00FB1508 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1CDCE12219E26C00FB1508 /* LaunchScreen.storyboard */; };
 		CD1CDCEE2219E26C00FB1508 /* CatSoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1CDCED2219E26C00FB1508 /* CatSoundTests.swift */; };
 		CD1CDCF92219E26C00FB1508 /* CatSoundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1CDCF82219E26C00FB1508 /* CatSoundUITests.swift */; };
+		CD1CDD082219E29900FB1508 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1CDD072219E29900FB1508 /* AVFoundation.framework */; };
+		CD1CDD0B2219E2D900FB1508 /* Cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = CD1CDD0A2219E2D900FB1508 /* Cat.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		CD1CDCF42219E26C00FB1508 /* CatSoundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatSoundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1CDCF82219E26C00FB1508 /* CatSoundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatSoundUITests.swift; sourceTree = "<group>"; };
 		CD1CDCFA2219E26C00FB1508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD1CDD072219E29900FB1508 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CD1CDD0A2219E2D900FB1508 /* Cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cat.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD1CDD082219E29900FB1508 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +83,11 @@
 			isa = PBXGroup;
 			children = (
 				CD1CDCD72219E26A00FB1508 /* CatSound */,
+				CD1CDD092219E2D900FB1508 /* Resources */,
 				CD1CDCEC2219E26C00FB1508 /* CatSoundTests */,
 				CD1CDCF72219E26C00FB1508 /* CatSoundUITests */,
 				CD1CDCD62219E26A00FB1508 /* Products */,
+				CD1CDD062219E29900FB1508 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +130,23 @@
 				CD1CDCFA2219E26C00FB1508 /* Info.plist */,
 			);
 			path = CatSoundUITests;
+			sourceTree = "<group>";
+		};
+		CD1CDD062219E29900FB1508 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD1CDD072219E29900FB1508 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD1CDD092219E2D900FB1508 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD1CDD0A2219E2D900FB1508 /* Cat.wav */,
+			);
+			name = Resources;
+			path = CatSound/Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +256,7 @@
 				CD1CDCE32219E26C00FB1508 /* LaunchScreen.storyboard in Resources */,
 				CD1CDCE02219E26C00FB1508 /* Assets.xcassets in Resources */,
 				CD1CDCDE2219E26A00FB1508 /* Main.storyboard in Resources */,
+				CD1CDD0B2219E2D900FB1508 /* Cat.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5C53NFZUUT;
 				INFOPLIST_FILE = CatSound/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5C53NFZUUT;
 				INFOPLIST_FILE = CatSound/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
